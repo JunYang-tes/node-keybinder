@@ -1,0 +1,18 @@
+{
+  "name": "node-keybinder",
+  "version": "1.0.0",
+  "description": "Global hot key for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "install":"nody-gyp configure && node-gyp build",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "hotkey"
+  ],
+  "author": "Qianba <OuyangQianba@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.6.2"
+  }
+}
