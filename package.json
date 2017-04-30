@@ -1,10 +1,10 @@
 {
   "name": "node-keybinder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Global hot key for nodejs",
   "main": "index.js",
   "scripts": {
-    "install":"nody-gyp configure && node-gyp build",
+    "install":"node-gyp configure && node-gyp build",
     "test": "node test/test.js"
   },
   "keywords": [
