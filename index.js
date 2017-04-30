@@ -1,1 +1,1 @@
-module.export = require("../build/Release/keybinder.node")
+module.exports = require("./build/Release/keybinder.node")

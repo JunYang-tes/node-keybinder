@@ -21,7 +21,6 @@
       "libraries":[
         '<!@(pkg-config --libs gtkmm-3.0 keybinder-3.0)'
       ],
-      "include_dirs": ["<!(node -e \"require('nan')\")"]
-    }
+     }
   ]
 }

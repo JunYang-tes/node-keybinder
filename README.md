@@ -20,4 +20,6 @@ const keybinder = require("keybinder");
 keybinder.on("<Ctrl>B", () => {
   console.log("Ctrl+B")
 })
+//If you have a another GTK event loop,do not call start.
+keybinder.start()
 ```
