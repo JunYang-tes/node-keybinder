@@ -3,19 +3,17 @@
 #include <gtk/gtk.h>
 #include <keybinder.h>
 #include <node.h>
-#include <nan.h>
 #include <string>
 #include <thread>
 #include <uv.h>
 #include <map>
-using Nan::Utf8String;
-using namespace v8;
-using namespace node;
-using namespace std;
-
 #include <mutex>
 #include <condition_variable>
 #include <deque>
+
+using namespace v8;
+using namespace node;
+using namespace std;
 
 template <typename T>
 class queue
@@ -62,7 +60,7 @@ void listener(){
 void on(const FunctionCallbackInfo<Value>& args){
   Isolate* isolate = Isolate::GetCurrent();
   HandleScope scope(isolate);
-  auto key =string(*Utf8String(args[0].As<String>()));
+  auto key =string(*String::Utf8Value(args[0].As<String>()));
   keybinder_bind(key.c_str(),handler,NULL);
   Local<Function> callback = args[1].As<Function>();
   Persistent<Function> *p=new Persistent<Function>();

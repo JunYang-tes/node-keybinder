@@ -11,8 +11,5 @@
     "hotkey"
   ],
   "author": "Qianba <OuyangQianba@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "nan": "^2.6.2"
-  }
+  "license": "ISC"
 }
